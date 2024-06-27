@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Advance_calculator.css">
+</head>
+<body>
+    <h1>Advance Calculator</h1>
+    <div>
+    <label for="">Num1 :</label>
+    <input type="number" placeholder="Enter the val1" id="val1"><br><br>
+    <label for="">Num2 :</label>
+    <input type="number" placeholder="Enter the val2" id="val2"><br><br>
+    <button onclick="Add()">ADD</button>
+    <button ondblclick="Sub()">SUB</button>
+    <button onmouseover="Mul()">MUL</button>
+    <button onblur="Div()">DIV</button><br><br>
+    Result: <input id="m"readonly>
+</div>
+</body>
+<script>
+    function Add(){
+        var a=document.getElementById("val1").value;
+        var b=document.getElementById("val2").value;
+        var c=parseInt(a)+parseInt(b);
+       document.getElementById("m").value=c;
+    }
+    function Sub(){
+        var a=document.getElementById("val1").value;
+        var b=document.getElementById("val2").value;
+        var c=parseInt(a)-parseInt(b);
+        document.getElementById("m").value=c;
+    }
+    function Mul(){
+        var a=document.getElementById("val1").value;
+        var b=document.getElementById("val2").value;
+        var c=parseInt(a)*parseInt(b);
+        document.getElementById("m").value=c;
+    }
+    function Div(){
+        var a=document.getElementById("val1").value;
+        var b=document.getElementById("val2").value;
+        var c=parseInt(a)/parseInt(b);
+        document.getElementById("m").value=c;
+    }
+</script>
+</html>

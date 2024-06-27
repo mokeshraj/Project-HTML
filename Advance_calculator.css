@@ -1,0 +1,24 @@
+body{
+    background-color: sandybrown;
+    background-image: url(Screenshot\ 2024-06-20\ 225445.png);
+    background-repeat: no-repeat;
+    background-size: cover,contain;
+}
+h1{
+    text-align: center;
+    padding-top: 200px;
+}
+div{
+    text-align: center;
+}
+button{
+    border: 20px;
+    border-color: pink;
+    margin-left: 20px;
+    
+
+}
+label{
+    color: blue;
+}
+
